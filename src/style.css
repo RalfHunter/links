@@ -1,0 +1,50 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fundo {
+  width: 393px;
+  height: 852px;
+  background-color: red;
+}
+
+.topo{
+  height: 220px;
+  width: inherit;
+  background-color: blue;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  font-size: 25px;
+  font-family: sans-serif;
+  gap: 25px
+}
+
+.foto-perfil{
+  height: 96px;
+  width: 96px;
+  border-radius: 50%;
+}
+
+.meio {
+  display: flex;
+  justify-content: center;
+}
+
+.botao {
+  width: 294px;
+  height: 57px;
+  display: flex;
+  align-items: center;
+  gap:14px;
+  padding-left: 24px;
+}
