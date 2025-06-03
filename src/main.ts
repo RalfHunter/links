@@ -13,9 +13,9 @@ let links_lista:string = '';
 
 dados.lista_links.forEach(link => {
   links_lista +=`
-  <div class='botao'>
+  <div class='botao' style='background-color:${dados.COR_LINK_HOVER[0]}';>
     <img src='${link.icone}'/>
-    <a href="">${link.texto}</a>
+    <a href="" style='color:${dados.COR_TEXTO_LINK}; text-decoration:none'>${link.texto}</a>
   </div>
   `
 })
@@ -29,6 +29,7 @@ app.innerHTML = `
     <div class='meio'>
     ${links_lista}
     </div>
+    <div class='base'></div>
   <div>
 `
 
