@@ -5,10 +5,11 @@
       "qr": "/public/qr1.svg",
       "url_foto":"/public/foto1.png",
       "Nome":"Emília Andrade",
-      "Fundo": "./public/fundo-foto1.jpg",
-      "COR_LINK_HOVER":["#6DA9F3", "black"],
+      "Fundo": ["/public/fundo-foto1.jpg"],
+      "COR_LINK_HOVER":["#6DA9F3", "#3B81D8"],
       "COR_TEXTO_LINK":"#F1F1F1",
-      "border-radius":"5",
+      "border_radius":"5px",
+      "QR":"/public/qr1.svg",
       "lista_links":
       [
         {
