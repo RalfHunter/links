@@ -15,16 +15,24 @@ let links_lista: string = '';
 
 dados.lista_links.forEach(link => {
   links_lista += `
-  <div class='botao' style='background-color:${dados.COR_LINK_HOVER[0]}; border-radius:${dados.border_radius};'>
-    <a class='link' href="" style='color:${dados.COR_TEXTO_LINK}; text-decoration:none; height:inherit;width:100%;'>
-      <img src='${link.icone}'/>  
+  <div class='botao' style='background-color:${dados.COR_LINK_HOVER[0]}; border-radius:${dados.border_radius}; border: 1px solid ${dados.COR_LINK_HOVER[2] || "none"}'>
+    <a class='link' href="" style='text-decoration:none; height:inherit;width:100%;'>
+      <img class='icone-cor'src='${link.icone}'/>  
       ${link.texto}
     </a>
   </div>
   `
 })
 
+style.innerHTML += `
+  .link{
+    color:${dados.COR_TEXTO_LINK}
+  }
+  .icone-cor {
+    filter:${dados.COR_TEXTO_LINK === "#010101" ? 'invert(100%)':'invert(00%)'};
+  }
 
+`
 
 if (dados.Fundo.length <= 1) {
   if (dados.Fundo[0].includes(".")) {
@@ -32,7 +40,7 @@ if (dados.Fundo.length <= 1) {
   <div class='fundo'>
   <img class='fundo-imagem' src='${dados.Fundo[0]}'>
       <div class='topo'>
-        <p>${dados.Nome}</p>
+        <p style='color:${dados.Nome[1]};'>${dados.Nome[0]}</p>
         <img class='foto-perfil' src='${dados.url_foto}'style='border:2px solid ${dados.COR_LINK_HOVER[1]};'>
       </div>
       <div class='meio'>
@@ -54,10 +62,11 @@ if (dados.Fundo.length <= 1) {
       }
     `
   } else {
+    console.log("CAIU AQUI")
     app.innerHTML = `
   <div class='fundo'>
     <div class='topo'>
-    <p>${dados.Nome}</p>
+    <p style='color:${dados.Nome[1]};'>${dados.Nome[0]}</p>
       <img class='foto-perfil' src='${dados.url_foto}'style='border:2px solid ${dados.COR_LINK_HOVER[1]};'>
     </div>
     <div class='meio'>
@@ -68,14 +77,10 @@ if (dados.Fundo.length <= 1) {
     </div>
   </div>
 `
-    style.innerHTML = `
-      .fundo {
-        display: flex;
-        flex-direction: column;
-        width: 393px;
-        height: 852px;
-        /* background-color: red; */
-      }
+    style.innerHTML += `
+    .fundo{
+      background-color:${dados.Fundo[0]}
+    }
     `
   }
 
@@ -87,4 +92,15 @@ style.innerHTML += `
 background-color: ${dados.COR_LINK_HOVER[1]};
 }
 `
+if(dados.inverte == true){
+  style.innerHTML += `
+.link:hover{
+  color:#F1F1F1;
+}
+.link:hover img{
+  filter:invert(0%);
+}
+  
+`
+}
 console.log(dados)
