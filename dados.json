@@ -49,9 +49,57 @@
         ]
     },
     {
+      "id":"2",
+      "inverte":false,
+      "url_foto":"/public/foto2.png",
+      "Nome":["Marco Andrade", "#000000"],
+      "Fundo": ["/public/fundo-foto2.jpg"],
+      "COR_LINK_HOVER":["#3AB74D", "#159128"],
+      "COR_TEXTO_LINK":"#F1F1F1",
+      "border_radius":"0px",
+      "QR":"/public/qr2.svg",
+      "lista_links":
+      [
+        {
+          "icone":"/public/wifi.svg",
+          "texto":"Blog",
+          "url":"https://google.com.br"
+          },
+          {
+          "icone":"/public/gitlab.svg",
+          "texto":"GitLab",
+          "url":"https://google.com.br"
+          }
+          ,
+          {
+          "icone":"/public/github.svg",
+          "texto":"GitHub",
+          "url":"https://google.com.br"
+          }
+          ,
+          {
+          "icone":"/public/linkedin.svg",
+          "texto":"Linkedin",
+          "url":"https://google.com.br"
+          }
+          ,
+          {
+          "icone":"/public/instagram.svg",
+          "texto":"Instagram",
+          "url":"https://google.com.br"
+          }
+          ,
+          {
+          "icone":"/public/email.svg",
+          "texto":"Enviar um e-mail",
+          "url":"https://google.com.br"
+          }
+        ]
+    },
+    {
       "id":"3",
       "inverte":true,
-      "url_foto":"/public/foto2.png",
+      "url_foto":"/public/foto3.png",
       "Nome":["Marco Andrade", "#F1F1F1"],
       "Fundo": ["#EB5E67"],
       "COR_LINK_HOVER":["#F1F1F1", "#D8565E", "#F1F1F1"],
