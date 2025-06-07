@@ -143,6 +143,150 @@
           "url":"https://google.com.br"
           }
         ]
+    },
+    {
+      "id":"4",
+      "inverte":false,
+      "url_foto":"/public/foto4.png",
+      "Nome":["José Silva", "#000000"],
+      "Fundo": ["#FFCE56"],
+      "COR_LINK_HOVER":["#F1F1F1", "#F1B924"],
+      "COR_TEXTO_LINK":"#010101",
+      "border_radius":"32px",
+      "QR":"/public/qr4.svg",
+      "lista_links":
+      [
+        {
+          "icone":"/public/wifi.svg",
+          "texto":"Blog",
+          "url":"https://google.com.br"
+          },
+          {
+          "icone":"/public/gitlab.svg",
+          "texto":"GitLab",
+          "url":"https://google.com.br"
+          }
+          ,
+          {
+          "icone":"/public/github.svg",
+          "texto":"GitHub",
+          "url":"https://google.com.br"
+          }
+          ,
+          {
+          "icone":"/public/linkedin.svg",
+          "texto":"Linkedin",
+          "url":"https://google.com.br"
+          }
+          ,
+          {
+          "icone":"/public/instagram.svg",
+          "texto":"Instagram",
+          "url":"https://google.com.br"
+          }
+          ,
+          {
+          "icone":"/public/email.svg",
+          "texto":"Enviar um e-mail",
+          "url":"https://google.com.br"
+          }
+        ]
+    },
+    {
+      "id":"5",
+      "inverte":false,
+      "url_foto":"/public/foto5.png",
+      "Nome":["Eliana Silva", "#F1F1F1"],
+      "Fundo": ["#535155","#B7B2BB"],
+      "COR_LINK_HOVER":["#535155", "#222124"],
+      "COR_TEXTO_LINK":"#F1F1F1",
+      "border_radius":"4px",
+      "QR":"/public/qr5.svg",
+      "lista_links":
+      [
+        {
+          "icone":"/public/wifi.svg",
+          "texto":"Blog",
+          "url":"https://google.com.br"
+          },
+          {
+          "icone":"/public/gitlab.svg",
+          "texto":"GitLab",
+          "url":"https://google.com.br"
+          }
+          ,
+          {
+          "icone":"/public/github.svg",
+          "texto":"GitHub",
+          "url":"https://google.com.br"
+          }
+          ,
+          {
+          "icone":"/public/linkedin.svg",
+          "texto":"Linkedin",
+          "url":"https://google.com.br"
+          }
+          ,
+          {
+          "icone":"/public/instagram.svg",
+          "texto":"Instagram",
+          "url":"https://google.com.br"
+          }
+          ,
+          {
+          "icone":"/public/email.svg",
+          "texto":"Enviar um e-mail",
+          "url":"https://google.com.br"
+          }
+        ]
+    },
+    {
+      "id":"6",
+      "inverte":false,
+      "url_foto":"/public/foto5.png",
+      "Nome":["Eliana Silva", "#000000"],
+      "Fundo": ["#76A0B8","#69E2C3"],
+      "COR_LINK_HOVER":["rgba(255, 255, 255, 0)", "#222124","#F1F1F1"],
+      "COR_TEXTO_LINK":"#F1F1F1",
+      "border_radius":"32px",
+      "QR":"/public/qr5.svg",
+      "lista_links":
+      [
+        {
+          "icone":"/public/wifi.svg",
+          "texto":"Blog",
+          "url":"https://google.com.br"
+          },
+          {
+          "icone":"/public/gitlab.svg",
+          "texto":"GitLab",
+          "url":"https://google.com.br"
+          }
+          ,
+          {
+          "icone":"/public/github.svg",
+          "texto":"GitHub",
+          "url":"https://google.com.br"
+          }
+          ,
+          {
+          "icone":"/public/linkedin.svg",
+          "texto":"Linkedin",
+          "url":"https://google.com.br"
+          }
+          ,
+          {
+          "icone":"/public/instagram.svg",
+          "texto":"Instagram",
+          "url":"https://google.com.br"
+          }
+          ,
+          {
+          "icone":"/public/email.svg",
+          "texto":"Enviar um e-mail",
+          "url":"https://google.com.br"
+          }
+        ]
     }
   ]
 }

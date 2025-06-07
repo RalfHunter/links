@@ -85,6 +85,28 @@ if (dados.Fundo.length <= 1) {
   }
 
 }
+else {
+   app.innerHTML = `
+  <div class='fundo'>
+      <div class='topo'>
+        <p style='color:${dados.Nome[1]};'>${dados.Nome[0]}</p>
+        <img class='foto-perfil' src='${dados.url_foto}'style='border:2px solid ${dados.COR_LINK_HOVER[1]};'>
+      </div>
+      <div class='meio'>
+        ${links_lista}
+      </div>
+      <div class='base'>
+        <img src='${dados.QR}' />
+      </div>
+  </div>
+`
+    style.innerHTML += `
+      .fundo{
+       background:linear-gradient(to bottom, ${dados.Fundo[0]}, ${dados.Fundo[1]});
+       border: 1px solid ${dados.COR_TEXTO_LINK[2] ? dados.COR_TEXTO_LINK[2] : "none"} ;
+      }
+    `
+}
 
 // }
 style.innerHTML += `
